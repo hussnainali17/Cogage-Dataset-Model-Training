@@ -1,0 +1,30 @@
+{
+  "subjects": [
+    "S1",
+    "S2",
+    "S5",
+    "S7"
+  ],
+  "classes": {
+    "Bending": 0,
+    "Walking": 1,
+    "Sitting": 2,
+    "Standing": 3
+  },
+  "seed": 42,
+  "epochs": 100,
+  "learning_rate": 0.01,
+  "mini_batch_size": 8,
+  "momentum": 0.9,
+  "adamw_weight_decay": 0.01,
+  "architecture": [
+    4224,
+    32,
+    16,
+    4
+  ],
+  "parameter_count": 135796,
+  "validation_fraction": 0.2,
+  "validation_grouping": "source recording folder plus Event, within _1_extracted only",
+  "test_selection": "best validation-loss checkpoint; test evaluated once per run"
+}
