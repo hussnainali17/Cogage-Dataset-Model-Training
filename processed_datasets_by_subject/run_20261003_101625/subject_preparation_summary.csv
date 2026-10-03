@@ -1,0 +1,9 @@
+subject,status,paired_activities,train_windows,test_windows,output_dir
+S1,prepared,"Bending,Walking,Sitting,Standing",40,40,D:\7th sem\ML\DATASETS\Annonmazed_CogActivity\DATA_PREP\processed_datasets_by_subject\run_20261003_101625\S1
+S2,prepared,"Bending,Walking,Sitting,Standing",40,40,D:\7th sem\ML\DATASETS\Annonmazed_CogActivity\DATA_PREP\processed_datasets_by_subject\run_20261003_101625\S2
+S3,prepared,"Bending,Standing",20,20,D:\7th sem\ML\DATASETS\Annonmazed_CogActivity\DATA_PREP\processed_datasets_by_subject\run_20261003_101625\S3
+S4,skipped_no_activity_with_both_splits,,0,0,
+S5,prepared,"Bending,Walking,Sitting,Standing",40,40,D:\7th sem\ML\DATASETS\Annonmazed_CogActivity\DATA_PREP\processed_datasets_by_subject\run_20261003_101625\S5
+S6,prepared,"Bending,Sitting,Standing",30,30,D:\7th sem\ML\DATASETS\Annonmazed_CogActivity\DATA_PREP\processed_datasets_by_subject\run_20261003_101625\S6
+S7,prepared,"Bending,Walking,Sitting,Standing",38,39,D:\7th sem\ML\DATASETS\Annonmazed_CogActivity\DATA_PREP\processed_datasets_by_subject\run_20261003_101625\S7
+S8,prepared,Bending,10,9,D:\7th sem\ML\DATASETS\Annonmazed_CogActivity\DATA_PREP\processed_datasets_by_subject\run_20261003_101625\S8

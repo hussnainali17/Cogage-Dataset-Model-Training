@@ -1,0 +1,36 @@
+CogAge Atomic Behaviour dataset preparation: S6
+
+Subject: S6
+Paired activities processed: Bending, Sitting, Standing
+Shared class mapping: {"Bending": 0, "Sitting": 2, "Standing": 3, "Walking": 1}
+Resample frequency: 20ms
+Window size: 128
+Feature count: 33
+X_train shape: (30, 128, 33)
+X_test shape: (30, 128, 33)
+Split policy: this subject's _1_extracted folders feed train; _2_extracted folders feed test.
+Scaler: fitted only on this subject's training windows; then applied to that subject's train and test windows.
+Raw sensor files audited: 720
+Malformed rows: 0
+Missing raw measurement values: 0
+Resampled NaN cells interpolated or dropped: 113301
+Rows removed after interpolation/synchronization: 180
+Incomplete train windows discarded: 30 (3594 tail rows)
+Incomplete test windows discarded: 30 (3602 tail rows)
+
+Window counts per shared class ID:
+  Class 0 (Bending): train=10, test=10
+  Class 1 (Walking): train=0, test=0
+  Class 2 (Sitting): train=10, test=10
+  Class 3 (Standing): train=10, test=10
+
+Original folders used:
+  S6_Bending_1_extracted
+  S6_Bending_2_extracted
+  S6_Sitting_1_extracted
+  S6_Sitting_2_extracted
+  S6_Standing_1_extracted
+  S6_Standing_2_extracted
+
+The shared four-class mapping is retained even if a class is unavailable for this subject; unavailable classes have zero windows.
+The original _2_extracted split is kept as test and is never mixed into train or validation.

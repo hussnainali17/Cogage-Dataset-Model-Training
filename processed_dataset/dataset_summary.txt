@@ -1,0 +1,50 @@
+CogAge Atomic Behaviour S1 dataset preparation summary
+
+Selected activities: Bending, Walking, Sitting, Standing
+Class mapping: {"Bending": 0, "Sitting": 2, "Standing": 3, "Walking": 1}
+Resample frequency: 20ms
+Window size: 128 timesteps
+Split policy: only _1_extracted folders feed train; only _2_extracted folders feed test.
+Scaler: StandardScaler fitted on training-window timesteps only, then applied to train and test.
+Feature count: 33
+X_train shape: (40, 128, 33)
+X_test shape: (40, 128, 33)
+Inspected raw sensor files: 960
+Malformed rows reported by audit: 0
+Missing raw measurement values (audit): 0
+Resampled NaN cells interpolated or dropped: 149049
+Rows removed after interpolation/synchronization: 211
+Incomplete train windows discarded: 40 (4796 tail rows)
+Incomplete test windows discarded: 40 (4820 tail rows)
+
+Selected original folders:
+  S1_Bending_1_extracted -> TRAIN
+  S1_Bending_2_extracted -> TEST
+  S1_Walking_1_extracted -> TRAIN
+  S1_Walking_2_extracted -> TEST
+  S1_Sitting_1_extracted -> TRAIN
+  S1_Sitting_2_extracted -> TEST
+  S1_Standing_1_extracted -> TRAIN
+  S1_Standing_2_extracted -> TEST
+
+Class distributions (windows):
+  TRAIN:
+    Class 0 (Bending): 10
+    Class 1 (Walking): 10
+    Class 2 (Sitting): 10
+    Class 3 (Standing): 10
+  TEST:
+    Class 0 (Bending): 10
+    Class 1 (Walking): 10
+    Class 2 (Sitting): 10
+    Class 3 (Standing): 10
+
+Raw recordings, events, and windows per class:
+  Bending: recordings=2, events=20, train_windows=10, test_windows=10
+  Walking: recordings=2, events=20, train_windows=10, test_windows=10
+  Sitting: recordings=2, events=20, train_windows=10, test_windows=10
+  Standing: recordings=2, events=20, train_windows=10, test_windows=10
+
+Per-file raw inspection: raw_file_audit.csv (rows, columns, malformed rows, missing values, timestamp conversion, sampling interval).
+Plots: figures/class_counts.png and figures/sensor_time_series.png.
+Validation data is not generated; the original test recording remains untouched.
